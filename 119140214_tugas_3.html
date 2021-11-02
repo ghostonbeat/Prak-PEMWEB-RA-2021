@@ -1,0 +1,102 @@
+<!--
+    
+    Nama            : Tri Aji Bagaskara
+    NIM             : 119140214
+    Kelas           : Pemrograman web RB
+    Kelas Praktikum : Pemrograman web RA
+    Soal Praktikum
+    Buatlah sebuah website dengan menggunakan javascript dimana website tersebut harus
+    mengandung perulangan, percabangan, dan juga fungsi. Website tersebut dapat merubah tema
+    jika user memilih tema yang berbeda. Dapat menampilkan teks tertentu jika user memilih kata
+    kunci tertentu. Dan dapat menghitung nilai faktorial dan menampilkan hasilnya ke halaman
+    website
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Tugas Praktikum 3 </title>
+</head>
+<body>
+
+    <span> Select theme : </span>
+    <select id="theme" onclick ="choose_theme()">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+
+    <h1> This is my website </h1> 
+
+    <span>select this weather type today : </span>
+        <select id="weather" onclick ="choose_weather()">
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+            <option value="winter">Winter</option>
+            <option value="dry season">Dry season</option>
+        </select>
+        <p id="teks_1"></p>
+
+    <p>Input number : 
+        <input type="number" id="Input_number">
+        <button onclick="Get_faktorial()">Get Faktorial</button>
+    </p>
+        <p id="teks_2"></p>
+
+    
+    <script type="text/javascript">
+        function choose_theme() 
+        {
+            var theme = document.getElementById('theme').value;
+            if (theme == "black")
+            {
+                document.body.style.background = "black";
+                document.body.style.color = "white";
+            }else
+            {
+                document.body.style.background = "white";
+                document.body.style.color = "black";
+            }
+        }
+
+        function choose_weather()
+        {
+            var Weather = document.getElementById("weather").value;
+            
+            var text = " ";
+            if(Weather == "sunny")
+            {
+                text = "It is nice and sunny outside today.Wear shorts! Go to the beach,or the park,and get an ice cream.";
+            }else if (Weather == "rainy") 
+            {
+                text = "it's rainy today, prepare an umbrella or raincoat before going out.";
+            }else if (Weather == "winter") 
+            {
+                text = "We will spend the winter in a city apartment.";
+            }else
+            {
+                text = "The dry season is almost here, don't waste water.";
+            }
+
+            document.getElementById("teks_1").innerHTML = text;
+        }
+
+        function Get_faktorial() 
+        {
+            var number = document.getElementById("Input_number").value;
+            var results = 1;
+
+            var x=number;
+            while(x!=0)
+            {
+                results = results * x;
+                x--;
+            }
+            
+            var text = "The factorial of " + number + " is " + results;document.getElementById("teks_2").innerHTML = text;
+        }
+    </script>
+
+</body>
+</html>

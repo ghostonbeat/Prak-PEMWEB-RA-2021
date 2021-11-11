@@ -1,17 +1,14 @@
 <!--
-
     Nama            : Tri Aji Bagaskara
     NIM             : 119140214
     Kelas           : Pemrograman web RB
     Kelas Praktikum : Pemrograman web RA
-
 Soal Praktikum :  
 Buatlah Sebuah fungsi CRUD (Create,Read,Update,Delete) dengan menggunakan form yang mengimplementasikan AJAX,dengan ketentuan :
 1. Form menerima input data mahasiswa berupa NIM,Nama,Prodi,dan Angkatan
 2. Tabel data mahasiswa dapat berubah secara Realtime (tanpa reload page) setelah menerima input
 3. Data pada table dapat diedit dan berubah secara Realtime (tanpa reload page)
 4.Data pada table dapat dihapus dan berubah secara Realtime (tanpa reload page )
-
 -->
 
 <!DOCTYPE html>
@@ -38,7 +35,7 @@ h1{
 
 ul 
 {
- 	background-color: black;
+ 	background-color: grey;
  	top: 0;
 	margin: 0;
  	padding: 0;
@@ -58,7 +55,7 @@ li a
   	text-decoration: none;
   	padding: 14px 16px;
   	display: block;
- 	color: white;
+ 	color: black;
 	text-align: center;
 }
 
@@ -94,6 +91,13 @@ table button
 	
 }
 
+.tampilandata th{
+    padding:5px;
+    height: 30px;
+    background: grey;
+
+}
+
 </style>
 <body>
 <h1>Tabel Data Mahasiswa</h1>
@@ -121,12 +125,12 @@ table button
 	<table class="tampilandata" align="center" border="1" >
 	<thead style="text-align: center;">
 		<tr>
-		<th width="50px">No</th>
-		<th width="360px">Nama</th>
+		<th width="50px">NO</th>
+		<th width="360px">NAMA</th>
 		<th width="150px">NIM</th>
-		<th width="150px">Prodi</th>
-		<th width="150px">Angkatan</th>
-		<th width="200px">Option</th>
+		<th width="150px">PRODI</th>
+		<th width="150px">ANGKATAN</th>
+		<th width="200px">OPTION</th>
 		</tr>
 	</thead>
 	<tbody class="targetData">

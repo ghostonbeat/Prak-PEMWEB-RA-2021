@@ -14,7 +14,6 @@ Buatlah Sebuah fungsi CRUD (Create,Read,Update,Delete) dengan menggunakan form y
 
 -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +28,13 @@ Buatlah Sebuah fungsi CRUD (Create,Read,Update,Delete) dengan menggunakan form y
 	
 body 
 {
-	background-color: skyblue;
+	background-color: whitesmoke;
 }
 
+h1{
+	text-align: center;
+	color: black;
+}
 
 ul 
 {
@@ -66,29 +69,43 @@ li a:hover:not(.active)
 
 button
 {
-	background-color: whitesmoke;
-	color: black;
+	background-color: white;
+    color: black;
 }
-button:hover {
-    	background-color: black;
-    	color: white;
+button:hover 
+{
+    background-color: darkblue;
+    color: white;
+}
+
+
+table tr td
+{
+	padding: 0 10 10 10;
+}
+
+
+table button
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	
 }
 
 </style>
 <body>
-	<h1 align="center">Fungsi CRUD dengan Ajax</h1>
-	<div>
+	<h1>Tabel Data Mahasiswa</h1>
 	<br>
-
-	
 	<ul >
       <li><a href="#Home" >HOME</a></li>
       <li><a href="#About" >ABOUT</a></li>
       <li><a href="#contact" >CONTACT US</a></li>
   </ul>
-	
+  	<br>
 	<div>
-	<table align="center" class="tabel" border="1">
+	<table align="center" class="tabel" >
 		<tr><td>NIM</td> <td><input type="number" class="number_nim"></td></tr>
 		<tr><td>Nama</td> <td><input type="text" class="nama"></td></tr>
 		<tr><td>Prodi</td> <td><input type="text" class="prodi"></td></tr>
@@ -99,16 +116,24 @@ button:hover {
 			<button class="btn-batal" style="display: none;">Batal</button>
 		</td></tr>
 	</table>
-	</div>
-	<table class="tampilanData" align="center" border="1" >
+</div>
+	<br>
+	<table class="tampilandata" align="center" border="1" >
 		<thead style="text-align: center;">
-			
+				<tr>
+					<th width="50px">No</th>
+					<th width="360px">Nama</th>
+					<th width="150px">NIM</th>
+					<th width="150px">Prodi</th>
+					<th width="150px">Angkatan</th>
+					<th width="200px">Option</th>
+				</tr>
 		</thead>
 		<tbody class="targetData">
 		</tbody>
 	</table>
 	<br>
-	</div>
+</div>
 
 </body>
 </html>

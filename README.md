@@ -1,4 +1,4 @@
 # Prak-PEMWEB-RA-2021
 
 Masukkan nama anda disini dengan format :
-Nama - NIM
+Chantika Aurrelia - 119140117

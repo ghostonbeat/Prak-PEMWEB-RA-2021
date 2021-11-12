@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prak Mg3</title>
+</head>
+<body>
+    <div class="theme">
+    <label>Pilih theme</label>
+        <select onchange="choosetheme(value)">
+                <option value="light">☀️</option>
+                <option value="dark">🌙</option>
+        </select>
+    </div>
+    <h2 class="theme">Hello there, This is my Web</h2>
+    <div class="theme">
+        <label>Keyword</label>
+        <select onchange="chooseweather(value)">
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+        </select>
+    </div>
+    
+    <p class="theme" id="weather">Spring is the season when the landscape comes to life after a cold winter. There is stronger sunlight, temperatures begin to rise, and the days grow longer. The weather can change a lot in spring. It can be sunny and dry one minute, and wet and showery the next. Blossom appears on some trees and many low-growing plants burst into flower. Animals that have been hidden away in a deep sleep called hibernation wake up and come out from their dens. Many birds and animals return from their winter homes and start to breed. In the northern hemisphere, Earth’s upper half, spring begins in March. In the southern hemisphere, Earth’s lower half, spring begins in September.</p>
+	<div class="theme">
+        <h4>Faktorial</h4>
+		<label>Input Angka : </label>
+		<input type="number" name="" id="input">
+		<button onclick="faktorial()">Cek Faktorial</button>
+		<p id="faktorial"></p>
+    </div>
+    <script type="text/javascript">
+		function choosetheme(value) {
+			var theme = document.getElementsByClassName("theme")
+
+			if (value == "light") {
+				for (let i = 0; i < theme.length; i++) {
+					theme[i].style.color='black'
+				}
+				document.body.style.background = 'white'
+			} else{
+				for (let i = 0; i < theme.length; i++) {
+					theme[i].style.color='white'
+				}
+				document.body.style.background = 'black'
+			}
+		}
+
+        function chooseweather(value) {
+			var weather = document.getElementById("weather")
+			if (value == "Spring") {
+				weather.innerHTML = "Spring is the season when the landscape comes to life after a cold winter. There is stronger sunlight, temperatures begin to rise, and the days grow longer. The weather can change a lot in spring. It can be sunny and dry one minute, and wet and showery the next. Blossom appears on some trees and many low-growing plants burst into flower. Animals that have been hidden away in a deep sleep called hibernation wake up and come out from their dens. Many birds and animals return from their winter homes and start to breed. In the northern hemisphere, Earth’s upper half, spring begins in March. In the southern hemisphere, Earth’s lower half, spring begins in September."
+			}else if (value == "Summer") {
+				weather.innerHTML = "Summer is the hottest season of the year. The temperature can stay warm, even after the sun has gone down at night. There are plenty of leaves on the trees and lots of plants are in flower. Many trees and other plants produce fruit during summer. People spend time outside, enjoying the long, sunny days. In the northern hemisphere, Earth’s upper half, it is summer from June to September. In the southern hemisphere, Earth’s lower half, it is summer from December to March."
+			}else if (value == "Fall") {
+				weather.innerHTML = "Fall is a season during which the days get shorter and temperatures start to drop. In some places, rainfall increases. In areas with icy winters, some trees, such as oak, sycamore, and birch, prepare to lose their leaves. These trees are called deciduous trees. They stop producing chlorophyll, which is a chemical that helps plants make food from sunlight and also gives leaves their green color. As chlorophyll gradually disappears from the leaves, they turn to shades of red, orange, yellow, and brown. Many plants make seeds that will become new plants in spring. Some animals grow thicker fur to get ready for the cold winter. Others gain weight to prepare for a deep sleep called hibernation to take them through winter. In the northern hemisphere, Earth’s upper half, fall takes place from September to December, and in the southern hemisphere, Earth’s lower half, it is from March to June."
+            }else {
+				weather.innerHTML = "Winter is the coldest season of the year. Days are short and nights are long. Many trees survive by losing their leaves and lying dormant, or inactive, during this chilly season. Some animals enter a deep sleep called hibernation to help them save energy and survive winter. Other animals migrate, or move, to warmer regions. People need to heat their homes and wear thicker clothes to keep warm. The freezing winds often bring snow and ice. Winter lasts from December to March in the northern hemisphere, Earth’s upper half, and from June to September in the southern hemisphere, Earth’s lower half."
+			}
+		}
+
+        function faktorial() {
+		    var input = document.getElementById("input").value
+		    var hasil = input
+		    console.log(input)
+
+		    for (let i = hasil - 1; i > 0; i--) {
+		        hasil *= i
+		    }
+
+		    var faktorial = document.getElementById("faktorial")
+		    faktorial.innerHTML = `Hasil Faktorial Dari ${input} Adalah ${hasil}`
+		}
+	</script>
+
+</body>
+</html>

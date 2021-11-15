@@ -22,12 +22,11 @@
 	div
 	{
 		background: whitesmoke;
-		border-radius: 20px;
 		border: 2px solid black;
-		margin: 50px;
 		padding: 20px;
 		padding-top: 0;
-		
+		margin: 50px;
+		border-radius: 20px;
 	}
 	
 	hr
@@ -50,7 +49,8 @@
 	<div>
 		<form method="POST">
 			<h1>Soal 1</h1>
-			<hr><br>
+			<hr>
+			<br>
 			<input type="number" name="bilangan1" placeholder="Bilangan 1"><br>
 			<input type="number" name="bilangan2" placeholder="Bilangan 2"><br>
 			<select name="operator">
@@ -60,7 +60,9 @@
 				<option>-</option>
 				<option>/</option>
 				<option>%</option>
-			</select><br><br>
+			</select> 
+			<br>
+			<br>
 			<input type="submit" name="submit" class="btn">
 		</form>
 		<?php include('119140214_No_01.php'); ?>
@@ -69,7 +71,8 @@
 	<div>
 		<form method="POST">
 			<h1>Soal 2</h1>
-			<hr><br>
+			<hr>
+			<br>
 		</form>
 		<?php include('119140214_No_02.php'); ?>
 	</div>
@@ -77,7 +80,8 @@
 	<div>
 		<form method="POST">
 			<h1>Soal 3</h1>
-			<hr><br>
+			<hr>
+			<br>
 		</form>
 		<?php include('119140214_No_03.php'); ?>
 	</div>

@@ -28,7 +28,6 @@
 		padding: 20px;
 		padding-top: 0;
 		
-		
 	}
 	
 	hr

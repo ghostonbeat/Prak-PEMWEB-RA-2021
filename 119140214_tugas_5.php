@@ -41,7 +41,8 @@
 		border-radius: 5px;
 	}
 	
-	.btn:hover{
+	.btn:hover
+	{
 		background: blue;
 	}
 </style>

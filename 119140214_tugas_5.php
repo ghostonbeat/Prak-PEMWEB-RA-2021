@@ -1,6 +1,6 @@
 <!--
 
-	Nama            : Tri Aji Bagaskara
+    Nama            : Tri Aji Bagaskara
     NIM             : 119140214
     Kelas           : Pemrograman web RB
     Kelas Praktikum : Pemrograman web RA
@@ -31,7 +31,7 @@
 	
 	hr
 	{
-		border: 0.5px solid black;
+		border: 1px solid black;
 	}
 	input
 	{

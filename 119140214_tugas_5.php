@@ -22,11 +22,13 @@
 	div
 	{
 		background: whitesmoke;
+		border-radius: 20px;
 		border: 2px solid black;
+		margin: 50px;
 		padding: 20px;
 		padding-top: 0;
-		margin: 50px;
-		border-radius: 20px;
+		
+		
 	}
 	
 	hr

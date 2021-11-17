@@ -17,7 +17,7 @@
 <style>
 	body
 {
-	background: linear-gradient(-30deg,blue,skyblue,grey,yellow,pink);
+	background: linear-gradient(-30deg,blue,skyblue,grey,gold,pink);
 	background-size: 400% 400%;
 	position: relative;
 	animation: change 10s ease-in-out infinite;

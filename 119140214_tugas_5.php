@@ -33,33 +33,35 @@
 	{
 		background-position: 100% 50% ;
 	}
-	100%{
+	100%
+	{
 		background-position: 0 50% ;
 	}
-}	div
-	{
+}	
+div
+{
 		background: whitesmoke;
 		border: 2px solid black;
 		padding: 20px;
 		padding-top: 0;
 		margin: 50px;
 		border-radius: 20px;
-	}
+}
 	
-	hr
-	{
+hr
+{
 		border: 1px solid black;
-	}
-	input
-	{
+}
+input
+{
 		margin-bottom: 5px;
 		border-radius: 5px;
-	}
+}
 	
-	.btn:hover
-	{
+.btn:hover
+{
 		background: blue;
-	}
+}
 </style>
 
 <body>

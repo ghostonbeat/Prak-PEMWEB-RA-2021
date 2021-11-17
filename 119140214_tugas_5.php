@@ -61,6 +61,7 @@ input
 .btn:hover
 {
 		background: blue;
+		color: white;
 }
 </style>
 

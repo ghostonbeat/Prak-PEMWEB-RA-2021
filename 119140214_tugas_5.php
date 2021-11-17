@@ -16,13 +16,15 @@
 </head>
 <style>
 	body
-	{
-		background: grey;
-		animation: change 10s ease-in-out infinite;
-		background: linear-gradient(-45deg, purple,pink, blue);
-	}
-	@keyframes change 
-	{
+{
+	background: linear-gradient(-30deg,blue,skyblue,grey,yellow,pink);
+	background-size: 400% 400%;
+	position: relative;
+	animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change 
+{
 	0%
 	{
 		background-position: 0 50% ;
@@ -31,12 +33,10 @@
 	{
 		background-position: 100% 50% ;
 	}
-	100%
-	{
+	100%{
 		background-position: 0 50% ;
 	}
-}
-	div
+}	div
 	{
 		background: whitesmoke;
 		border: 2px solid black;

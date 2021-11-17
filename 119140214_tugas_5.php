@@ -15,7 +15,8 @@
 	<title>Tugas Praktikum 5</title>
 </head>
 <style>
-	body
+
+body
 {
 	background: linear-gradient(-30deg,blue,skyblue,grey,gold,pink);
 	background-size: 400% 400%;

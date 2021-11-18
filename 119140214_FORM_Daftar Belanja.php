@@ -87,56 +87,54 @@ button:hover
 
 </style>
 <body>
-	<h1 >Website Toko Buah ITERA</h1>
-	<hr>
-
-	<center>
-		<form method="POST" onsubmit="tampil()">
-			<table>
-				<thead>
-					<tr>
-						<td colspan="3" align="center" width="400px">MENU INPUT BELANJA</td>
-					</tr>
-					<tr align="center">
-						<td >Nama Buah</td>
-						<td >Harga Buah per Kilo</td>
-						<td >Jumlah Buah (Kg) </td>
-					</tr>
-				</thead>
-				<tbody>
-						<tr align="center">
-							<td><label >Buah Mangga</label></td>
-							<td><label >Rp. 15.000</label></td>
-							<td><input type="number" min="0" name="jumlahMangga" style="width: 40px" placeholder="0" value="0" ></td>
-						</tr>
-						<tr align="center">
-							<td><label >Buah Jambu</label></td>
-							<td><label >Rp. 13.000</label></td>
-							<td><input type="number" min="0" name="jumlahJambu" style="width: 40px" placeholder="0" value="0" ></td>
-						</tr>
-						<tr align="center">
-							<td><label >Buah Salak</label></td>
-							<td><label >Rp. 10.000</label></td>
-							<td><input type="number" min="0" name="jumlahSalak" style="width: 40px" placeholder="0" value="0" ></td>
-						</tr>
-				</tbody>
+<h1 >Website Toko Buah ITERA</h1>
+<hr>
+<center>
+	<form method="POST" onsubmit="tampil()">
+	<table>
+		<thead>
+			<tr>
+				<td colspan="3" align="center" width="400px">MENU INPUT BELANJA</td>
+			</tr>
+			<tr align="center">
+				<td >Nama Buah</td>
+				<td >Harga Buah per Kilo</td>
+				<td >Jumlah Buah (Kg) </td>
+			</tr>
+			</thead>
+			<tbody>
+			<tr align="center">
+				<td><label >Buah Mangga</label></td>
+				<td><label >Rp. 15.000</label></td>
+				<td><input type="number" min="0" name="jumlahMangga" style="width: 40px" placeholder="0" value="0" ></td>
+			</tr>
+			<tr align="center">
+				<td><label >Buah Jambu</label></td>
+				<td><label >Rp. 13.000</label></td>
+				<td><input type="number" min="0" name="jumlahJambu" style="width: 40px" placeholder="0" value="0" ></td>
+			</tr>
+			<tr align="center">
+				<td><label >Buah Salak</label></td>
+				<td><label >Rp. 10.000</label></td>
+				<td><input type="number" min="0" name="jumlahSalak" style="width: 40px" placeholder="0" value="0" ></td>
+			</tr>
+			</tbody>
 			</table>
 			<button name="tambah" id="btn" >Pesan</button>
 		</form>
 		
 		<table>
 			<thead>
-				<tr>
-					<td colspan="3" align="center" width="400px">Daftar Harga Belanja toko buah ITERA</td>
-				</tr>
-				<tr align="center">
-					<td>Nama Buah</td>
-					<td>Jumlah Buah (Kg) </td>
-					<td>Harga Buah </td>
-				</tr>
+			<tr>
+				<td colspan="3" align="center" width="400px">Daftar Harga Belanja toko buah ITERA</td>
+			</tr>
+			<tr align="center">
+				<td>Nama Buah</td>
+				<td>Jumlah Buah (Kg) </td>
+				<td>Harga Buah </td>
+			</tr>
 			</thead>
-			<tbody id="cetak" align="center">
-				
+			<tbody id="cetak" align="center">	
 			</tbody>
 		</table>
 	</center>

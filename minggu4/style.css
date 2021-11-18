@@ -1,0 +1,183 @@
+body, h1, h2, h3, h4{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 95%;
+    background-color : rgb(180, 180, 180);
+    margin: auto;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    background-color: rgb(66, 64, 64);
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    color: white;
+}
+.mainContent{
+    width: 95%;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: auto;
+}
+.leftContent{
+    background-color: grey;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 00.25rem;
+    color: white;
+}
+.middleContent{
+    background-color: grey;
+    width: 48%;
+    min-height: 500px;
+    float: left;
+    margin-left: 00.65rem;
+    box-sizing: border-box;
+    border-radius: 00.25rem;
+    color: white;
+}
+.rightContent{
+    background-color: grey;
+    width: 25%;
+    min-height: 500px;
+    float: right;
+    box-sizing: border-box;
+    border-radius: 00.25rem;
+    color: white;
+}
+.row{
+    width: 95%;
+    margin: 1.5rem 0.35rem;
+    box-sizing: border-box;
+}
+.col1{
+    width: 30%;
+    font-size: 1.25rem;
+    float: left;
+}
+.col2{
+    width: 68%;
+    float: right;
+    font-size: 1.25rem;
+}
+
+/* SHADOW */
+.light-shadow {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(240, 241, 247, 0.342) !important;
+  }
+  .light-shadow-in {
+    box-shadow: inset 0 0.15rem 1.75rem 0 rgba(240, 241, 247, 0.342) !important;
+  }
+  .dark-shadow {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(0, 1, 5, 0.781) !important;
+  }
+  .dark-shadow-in {
+    box-shadow: inset 0 0.15rem 1.75rem 0 rgba(0, 1, 5, 0.781) !important;
+  }
+
+input[type=text] {
+    display: block;
+    width: 100%;
+    float: right;
+    padding: 0.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    background: white;
+    color: black;
+    box-sizing: border-box;
+    box-shadow: inset 0 0.15rem 1.75rem 0 rgba(0, 1, 5, 0.192);
+}
+
+input[type=text]:focus{
+    outline: none;
+    border: 1px solid rgb(23, 54, 121);
+}
+.submit-button{
+    background-color: rgb(15, 18, 26);
+    border: none;
+    border-radius: 00.25rem;
+    color: white;
+    padding: 0.5rem 0.25rem;
+    width: 35%;
+    cursor: pointer;
+    float: right;
+}
+
+.submit-button:hover{
+    background-color: rgb(24, 27, 34);
+}
+
+.deleteButton{
+    float: left !important;
+    margin-left: 1.5rem;
+    background-color: rgb(184, 52, 52) !important;
+}
+.deleteButton:hover{
+    background-color: rgb(192, 15, 15) !important;
+}
+.editButton{
+    float: right !important;
+    margin-right: 1.5rem;
+    background-color: rgba(223, 114, 52, 0.884) !important;
+}
+.editButton:hover{
+    background-color: rgba(214, 100, 34, 0.884)  !important;
+}
+
+
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+    margin: 0.5rem;
+    box-sizing: border-box;
+}
+.table {
+    width: 98%;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+.table th,.table td {
+    padding: 0.125rem;
+    text-align: center;
+    margin: auto;
+    border: 1px solid white;
+}
+
+.table-bordered {
+    border-bottom: 0.5px solid #e3e6f0;
+}
+.table-bordered th{
+    border-top: 2.5px solid #e3e6f0;
+    border-bottom: 2.5px solid #e3e6f0;
+}
+
+.tm{
+    margin-top: 0.5rem;
+}
+.rm{
+    margin-right: 0.5rem;
+}
+.bm{
+    margin-bottom: 0.5rem;
+}
+.lm{
+    margin-left: 0.5rem;
+}
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}

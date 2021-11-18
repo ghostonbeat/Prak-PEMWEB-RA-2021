@@ -21,7 +21,7 @@ data diinputkan, maka hasil akan langsung muncul secara real-time atau tanpa rel
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tugas Praktikum 5</title>
+	<title>Tugas Praktikum 6</title>
 </head>
 
 

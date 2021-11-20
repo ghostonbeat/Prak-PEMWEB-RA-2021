@@ -1,0 +1,30 @@
+body{
+    margin: 50px 50px 10px 50px;
+    border: 2px solid black;
+    background-color: dimgrey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+legend{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    margin-left: 30%;
+}
+
+.MainContent{
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 35%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

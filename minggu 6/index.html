@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Tugas Praktikum 6</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="MainContent">
+    <form action="buah.php" method="post">
+            <fieldset>
+            <legend>BELANJA BUAH</legend>
+            <table>
+                <tr>
+                <td><label>Mangga (kg)</label></td>
+                <td><input type="number" name="mangga" id="mangga" onchange="harga()"></td>
+                </tr>
+                <tr>
+                <td><label>Jambu (kg)</label></td>
+                <td><input type="number" name="jambu" id="jambu" onchange="harga()"></td>
+                </tr>
+                <tr>
+                <td><label>Salak (kg)</label></td>
+                <td><input type="number" name="salak" id="salak" onchange="harga()"></td>
+                </tr>
+                <tr>
+                <td>Total Harga Sementara: </td>
+                <td><div id="hs"></div></td>
+                </tr>
+                <tr>
+                <td colspan="2"><button type="submit">Lihat Rincian Belanja</button></td>
+                </tr>
+            </table>
+            </fieldset>
+    </form>
+    </div>
+
+    <script>
+        function harga(){
+            var mangga=document.getElementById("mangga").value;
+            var jambu=document.getElementById("jambu").value;
+            var salak=document.getElementById("salak").value;
+            var total=(mangga*15000)+(jambu*13000)+(salak*10000);
+            document.getElementById("hs").innerHTML= "Rp. "+total+",-";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 3</title>
+</head>
+
+<body id="id">
+    <script type="text/javascript" src="fungsi.js"></script>
+
+    <div>
+        Select Theme :
+        <select name="theme" onchange="theme()" id="theme">
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Green">Green</option>
+        </select>
+
+        <h1>This is my website</h1>
+    </div>
+
+    <div>
+        Select the weather type today :
+        <select name="weather" onchange="weather()" id="weather">
+            <option value="Sunny">Sunny</option>
+            <option value="Rainy">Rainy</option>
+        </select>
+        <br>
+        <p id="note"></p>
+    </div>
+
+    <div>
+        Input number :
+        <input type="text" id="factorial">
+        <button onclick="factorial()">Get Factorial</button>
+        <p> <label for=" " id="hasil"></label> </p>
+    </div>
+
+</body>
+
+</html>
